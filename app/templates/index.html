@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Input</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-full max-w-3xl">
+        <h1 class="text-2xl font-bold text-gray-700 mb-6 text-center">Enter Data for Prediction</h1>
+        <form action="/" method="post" class="space-y-4">
+
+            <div>
+                <label for="eligible" class="block text-gray-700 font-bold mb-2">Eligible:</label>
+                <select id="eligible" name="eligible" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="job" class="block text-gray-700 font-bold mb-2">Job:</label>
+                <select id="job" name="job" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+                    <option value="1">Blue-Collar</option>
+                    <option value="2">Entrepreneur</option>
+                    <option value="3">Housemaid</option>
+                    <option value="4">Management</option>
+                    <option value="5">Retired</option>
+                    <option value="6">Self-Employed</option>
+                    <option value="7">Services</option>
+                    <option value="8">Student</option>
+                    <option value="9">Technician</option>
+                    <option value="10">Unemployed</option>
+                    <option value="11">Other</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="salary" class="block text-gray-700 font-bold mb-2">Salary per Year:</label>
+                <input type="number" id="salary" name="salary" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+            </div>
+
+            <div>
+                <label for="targeted" class="block text-gray-700 font-bold mb-2">Targeted:</label>
+                <select id="targeted" name="targeted" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="balance" class="block text-gray-700 font-bold mb-2">Balance:</label>
+                <input type="number" id="balance" name="balance" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+            </div>
+
+            <div>
+                <label for="housing" class="block text-gray-700 font-bold mb-2">Housing:</label>
+                <select id="housing" name="housing" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="loan" class="block text-gray-700 font-bold mb-2">Loan:</label>
+                <select id="loan" name="loan" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="day" class="block text-gray-700 font-bold mb-2">Day:</label>
+                <input type="number" id="day" name="day" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+            </div>
+
+            <div>
+                <label for="duration" class="block text-gray-700 font-bold mb-2">Duration:</label>
+                <input type="number" id="duration" name="duration" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+            </div>
+
+            <div>
+                <label for="campaign" class="block text-gray-700 font-bold mb-2">Campaign:</label>
+                <input type="number" id="campaign" name="campaign" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+            </div>
+
+            <div>
+                <label for="pdays" class="block text-gray-700 font-bold mb-2">Pdays (-1, 182, 91, 92, 183):</label>
+                <input type="number" id="pdays" name="pdays" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+            </div>
+
+            <div>
+                <label for="previous" class="block text-gray-700 font-bold mb-2">Previous:</label>
+                <input type="number" id="previous" name="previous" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+            </div>
+
+            <div>
+                <label for="marital_status" class="block text-gray-700 font-bold mb-2">Marital Status:</label>
+                <select id="marital_status" name="marital_status" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+                    <option value="married">Married</option>
+                    <option value="single">Single</option>
+                </select>
+            </div>
+            <input type="hidden" id="marital_married" name="marital_married" value="1.0">
+            <input type="hidden" id="marital_single" name="marital_single" value="0.0">
+
+            <div>
+                <label for="education" class="block text-gray-700 font-bold mb-2">Education:</label>
+                <select id="education" name="education" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+                    <option value="primary">Primary</option>
+                    <option value="secondary">Secondary</option>
+                    <option value="tertiary">Tertiary</option>
+                </select>
+            </div>
+            <input type="hidden" id="education_primary" name="education_primary" value="1.0">
+            <input type="hidden" id="education_secondary" name="education_secondary" value="0.0">
+            <input type="hidden" id="education_tertiary" name="education_tertiary" value="0.0">
+
+            <div>
+                <label for="contact" class="block text-gray-700 font-bold mb-2">Contact:</label>
+                <select id="contact" name="contact" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+                    <option value="cellular">Cellular</option>
+                    <option value="unknown">Other</option>
+                </select>
+            </div>
+            <input type="hidden" id="contact_cellular" name="contact_cellular" value="1.0">
+            <input type="hidden" id="contact_unknown" name="contact_unknown" value="0.0">
+
+            <div>
+                <label for="poutcome" class="block text-gray-700 font-bold mb-2">Poutcome:</label>
+                <select id="poutcome" name="poutcome" required class="block w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200">
+                    <option value="success">Success</option>
+                    <option value="other">Other</option>
+                    <option value="unknown">Unknown</option>
+                </select>
+            </div>
+            <input type="hidden" id="poutcome_success" name="poutcome_success" value="1.0">
+            <input type="hidden" id="poutcome_other" name="poutcome_other" value="0.0">
+            <input type="hidden" id="poutcome_unknown" name="poutcome_unknown" value="0.0">
+
+            <div class="text-center">
+                <input type="submit" value="Predict" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md">
+            </div>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+   
