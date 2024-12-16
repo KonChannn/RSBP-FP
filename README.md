@@ -16,17 +16,24 @@ The Bank Product Recommendation System is an interactive web-based application d
 
 ### How to run
 
+- Install node modules
+```sh
+cd app
+npm install
+```
+
 - Make your own python environment
 
 ```sh
 python -m venv venv
 ```
+
 - Install the python modules to run the app
 
 ```sh
-cd app
 pip install -r requirements.txt
 ```
+
 - Run the application
 
 ```sh
