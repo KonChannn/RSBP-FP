@@ -43,8 +43,9 @@ def predict():
         scaled_data = scaler.transform([data])
 
         prediction = model.predict(scaled_data)
+        confidence = model.predict_proba(scaled_data).max()
 
-        return render_template('result.html', prediction=prediction[0])
+        return render_template('result.html', prediction=prediction[0], confidence=confidence)
     return render_template('index.html')
 
 if __name__ == '__main__':
