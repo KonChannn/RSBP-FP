@@ -4,11 +4,11 @@ import joblib
 app = Flask(__name__, template_folder='templates')
 
 # Load the scaler
-with open('./app/scaler.pkl', 'rb') as f:
+with open('./scaler.pkl', 'rb') as f:
     scaler = joblib.load(f)
 
 # Load the model
-with open('./app/best_xgb.pkl', 'rb') as f:
+with open('./best_xgb.pkl', 'rb') as f:
     model = joblib.load(f)
 
 @app.route('/', methods=['GET', 'POST'])
